@@ -9,4 +9,7 @@ export default defineConfig({
     sourcemap: false,
     minify: 'terser',
   },
+  server: {
+    allowedHosts: ['devserver-base--muripng-portfolio.netlify.app'],
+  },
 })

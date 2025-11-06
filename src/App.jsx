@@ -1,14 +1,15 @@
+import { lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Scene3D from './components/Scene3D';
-import ProjectSection from './components/ProjectSection';
 import './App.css';
+
+const ProjectSection = lazy(() => import('./components/ProjectSection'));
 
 function App() {
   return (
     <div className="App">
       <Header />
       
-      {/* Hero section with 3D background */}
       <section className="hero">
         <Scene3D />
         <div className="hero-content">
@@ -17,10 +18,9 @@ function App() {
         </div>
       </section>
       
-      {/* Projects with scroll animations */}
-      <ProjectSection />
-      
-      {/* Add more sections as needed */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectSection />
+      </Suspense>
     </div>
   );
 }
