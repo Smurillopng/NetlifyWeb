@@ -1,0 +1,58 @@
+{
+  "header": {
+    "name": "Sérgio Faria",
+    "about": "About",
+    "games": "Games",
+    "art": "Art",
+    "code": "Code",
+    "contact": "Contact",
+    "theme_dark": "🌙 Dark",
+    "theme_light": "🌿 Light",
+    "language": "Language"
+  },
+  "introduction": {
+    "title": "Game Designer/Programmer",
+    "subtitle": "Creating experiences worth sharing"
+  },
+  "gamesSection": {
+    "title": "My Game Projects",
+    "viewOnItch": "View on Itch.io"
+  },
+  "projects": {
+    "ruling_horses_town": {
+      "title": "Ruling Horses Town (WIP)",
+      "description": "Management / Choice-Based",
+      "expanded_description": "<b>Genre:</b> Management / Choice-Based <br/><b>Platforms:</b> Windows <br/><b>Release Date:</b> In development <br/><br/>As mayor of HorsesTown's chaotic city, navigate political decisions to survive your term — because nothing can go wrong... for your mandate."
+    },
+    "valquiria": {
+      "title": "Valquíria",
+      "description": "HD2D RPG",
+      "expanded_description": "<b>Genre:</b> HD2D RPG <br/><b>Platforms:</b> Windows <br/><b>Release Date:</b> Apr 24, 2023 <br/><br/>A Viking-themed HD2D RPG made as the final project for the Game Design degree at SENAC-SP."
+    },
+    "error120": {
+      "title": "ERROR120",
+      "description": "Multiplayer tag",
+      "expanded_description": "<b>Genre:</b> Multiplayer / Tag <br/><b>Platforms:</b> Windows <br/><b>Release Date:</b> Nov 25, 2022 <br/><br/>A fast-paced, <i>radioactive multiplayer tag game.</i> Feel the <i>power of the hunter</i> and the <i>adrenaline of the survivor</i> as you chase or evade in a vibrant, post-apocalyptic arena."
+    },
+    "slimes_shields": {
+      "title": "Slimes & Shields: Bad Campaign",
+      "description": "Roguelike",
+      "expanded_description": "<b>Genre:</b> Roguelike <br/><b>Platforms:</b> Windows <br/><b>Release Date:</b> Jun 07, 2022 <br/><br/>A comical roguelike about a <i>kidnapped Slime</i> forced by a Dungeon Master to play his worst campaign: <i>Slimes & Shields</i>. Die, upgrade, and survive infinite runs where you are only allowed to use a shield."
+    },
+    "astrotag": {
+      "title": "Astrotag",
+      "description": "Space tag",
+      "expanded_description": "<b>Genre:</b> Sports / Tag <br/><b>Platforms:</b> Windows, Android, Web (HTML5) <br/><b>Release Date:</b> Released <br/><br/>Step into the shoes of Dithos Andromeda, a former racer forced back into the cosmic arena! Compete in the high-stakes <i>Enercup</i>, the galaxy's largest astrotag tournament, to pay off mounting debts in this thrilling <i>space racing simulation.</i>"
+    },
+    "onomos": {
+      "title": "Onomos",
+      "description": "Slime race bet simulator",
+      "expanded_description": "<b>Genre:</b> Racing / Betting <br/><b>Platforms:</b> Windows <br/><b>Release Date:</b> Jun 12, 2021 <br/><br/>Welcome to the great <i>Onomos Race.</i> Buy, bet, and <i>cheat your way to riches</i> in this high-stakes betting and racing game. Bankruptcy is only a temporary setback—you can always try again!"
+    },
+    "casa_dos_ushers": {
+      "title": "A Casa dos Ushers",
+      "description": "Mystery / Visual Novel",
+      "expanded_description": "<b>Genre:</b> Mystery / Visual Novel <br/><b>Platforms:</b> Windows <br/><b>Release Date:</b> Dec 04, 2020 <br/><br/>A haunting <i>Visual Novel</i> based on <i>Edgar Allan Poe's classic tale.</i> Journey to a secluded mansion after receiving a distress call, only to become entangled in a terrifying and deeply unsettling mystery."
+    }
+  }
+}

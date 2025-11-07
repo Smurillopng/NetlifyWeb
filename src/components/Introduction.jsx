@@ -1,15 +1,17 @@
+
 import "./Introduction.css";
+import { useTranslation } from "react-i18next";
 
 function Introduction() {
-    return (
-      <div className="introduction">
-        
-        <div className="introduction-content">
-          <h1>Game Designer/Programmer</h1>
-          <p>Creating experiences worth sharing</p>
-        </div>
+  const { t } = useTranslation();
+  return (
+    <div className="introduction">
+      <div className="introduction-content">
+        <h1>{t('introduction.title')}</h1>
+        <p>{t('introduction.subtitle')}</p>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Introduction;

@@ -37,12 +37,45 @@
   padding-left: 4rem;
 }
 
+
 .header .nav-rightSide-links {
   list-style: none;
   padding-top: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .header .socials-svg {
   width: 32px;
   height: 32px;
+}
+
+.header .lang-dropdown {
+  background: var(--header-bg);
+  color: var(--main-text);
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 1rem;
+  box-shadow: 0 2px 8px var(--accent2);
+  appearance: none;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.header .lang-value {
+  background: var(--main-bg);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 20px;
+}
+
+.header .lang-value:hover,
+.header .lang-value:focus {
+  background: var(--modal-link-hover-bg);
+  color: var(--main-text);
+  border-color: var(--accent);
 }

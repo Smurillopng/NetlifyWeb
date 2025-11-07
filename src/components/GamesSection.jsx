@@ -1,8 +1,12 @@
+
 import { useEffect, useRef, useState } from "react";
-import projects from "./ProjectsData";
+import { useTranslation } from "react-i18next";
+import getProjects from "./ProjectsData";
 import "./GameSection.css";
 
+
 function GamesSection() {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -82,7 +86,8 @@ function GamesSection() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // projects array is now imported from ProjectsData.jsx
+  // Use getProjects(t) to get localized project data
+  const projects = getProjects(t);
 
   return (
     <section ref={sectionRef} className="project-section" id="games">
@@ -90,7 +95,7 @@ function GamesSection() {
         ref={titleRef}
         className={`section-title${titleVisible ? " animate-title" : ""}`}
       >
-        My Game Projects
+        {t('gamesSection.title')}
       </h2>
       <div className="project-grid">
           {projects.map((project, index) => (
@@ -232,7 +237,7 @@ function GamesSection() {
                   rel="noopener noreferrer"
                   className="modal-link"
                 >
-                  View on Itch.io
+                  {t('gamesSection.viewOnItch')}
                 </a>
                 <div className="modal-meta">
                 </div>

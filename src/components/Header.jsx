@@ -1,8 +1,13 @@
+
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Header.css";
 
+
 function Header() {
+  const { t, i18n } = useTranslation();
   const [theme, setTheme] = useState('dark');
+  const [lang, setLang] = useState(i18n.language || 'en');
 
   useEffect(() => {
     if (theme === 'light') {
@@ -14,45 +19,52 @@ function Header() {
     }
   }, [theme]);
 
+
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  const handleLangChange = (e) => {
+    const newLang = e.target.value;
+    setLang(newLang);
+    i18n.changeLanguage(newLang);
   };
 
   return (
     <header className="header">
       <nav>
-        <h1><a href="home">Sérgio Faria</a></h1>
+        <h1><a href="home">{t('header.name')}</a></h1>
         <ul className="nav-leftSide-links">
           <li>
-            <a href="#about">About</a>
+            <a href="#about">{t('header.about')}</a>
           </li>
           <li>
-            <a href="#games">Games</a>
+            <a href="#games">{t('header.games')}</a>
           </li>
           <li>
-            <a href="#art">Art</a>
+            <a href="#art">{t('header.art')}</a>
           </li>
           <li>
-            <a href="#code">Code</a>
+            <a href="#code">{t('header.code')}</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">{t('header.contact')}</a>
           </li>
         </ul>
         <ul className="nav-rightSide-links">
           <li>
             <a target="_blank" href="https://www.linkedin.com/in/smurillopng/">
-              <img className="socials-svg" src="/images/linkedin_icon.svg" alt="LinkedIn" role="img"></img>
+              <img className="socials-svg" src="/images/linkedin_icon.svg" alt="LinkedIn" role="img" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://github.com/smurillopng">
-              <img className="socials-svg" src="/images/github_icon.svg" alt="GitHub" role="img"></img>
+              <img className="socials-svg" src="/images/github_icon.svg" alt="GitHub" role="img" />
             </a>
           </li>
           <li>
             <a target="_blank" href="https://smurillof.itch.io">
-              <img className="socials-svg" src="/images/itch-io_icon.svg" alt="Itch.io" role="img"></img>
+              <img className="socials-svg" src="/images/itch-io_icon.svg" alt="Itch.io" role="img" />
             </a>
           </li>
           <li>
@@ -68,8 +80,18 @@ function Header() {
               marginLeft: '1rem',
               boxShadow: '0 2px 8px var(--accent2)'
             }}>
-              {theme === 'dark' ? '🌙 Dark' : '🌿 Light'}
+              {theme === 'dark' ? t('header.theme_dark') : t('header.theme_light')}
             </button>
+          </li>
+          <li>
+            <select
+              value={lang}
+              onChange={handleLangChange}
+              className="lang-dropdown"
+            >
+              <option value="en" className="lang-value">EN</option>
+              <option value="pt" className="lang-value">PT</option>
+            </select>
           </li>
         </ul>
       </nav>

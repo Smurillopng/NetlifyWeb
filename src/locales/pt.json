@@ -1,0 +1,58 @@
+{
+  "header": {
+    "name": "Sérgio Faria",
+    "about": "Sobre",
+    "games": "Jogos",
+    "art": "Arte",
+    "code": "Código",
+    "contact": "Contato",
+    "theme_dark": "🌙 Escuro",
+    "theme_light": "🌿 Claro",
+    "language": "Idioma"
+  },
+  "introduction": {
+    "title": "Designer/Programador de Jogos",
+    "subtitle": "Criando experiências que valem a pena compartilhar"
+  },
+  "gamesSection": {
+    "title": "Meus Projetos de Jogos",
+    "viewOnItch": "Ver no Itch.io"
+  },
+  "projects": {
+    "ruling_horses_town": {
+      "title": "Ruling Horses Town (WIP)",
+      "description": "Gestão / Decisões",
+      "expanded_description": "<b>Gênero:</b> Gestão / Decisões <br/><b>Plataformas:</b> Windows <br/><b>Lançamento:</b> Em desenvolvimento <br/><br/>Como prefeito da caótica HorsesTown, navegue decisões políticas para sobreviver ao mandato — porque nada pode dar errado... para seu governo."
+    },
+    "valquiria": {
+      "title": "Valquíria",
+      "description": "RPG HD2D",
+      "expanded_description": "<b>Gênero:</b> RPG HD2D <br/><b>Plataformas:</b> Windows <br/><b>Lançamento:</b> 24 de abril de 2023 <br/><br/>Um RPG HD2D com tema viking feito como projeto final do curso de Game Design do SENAC-SP."
+    },
+    "error120": {
+      "title": "ERROR120",
+      "description": "Pega-pega multiplayer",
+      "expanded_description": "<b>Gênero:</b> Multiplayer / Pega-pega <br/><b>Plataformas:</b> Windows <br/><b>Lançamento:</b> 25 de novembro de 2022 <br/><br/>Um jogo de pega-pega multiplayer radioativo e acelerado. Sinta o <i>poder do caçador</i> e a <i>adrenalina do sobrevivente</i> enquanto caça ou foge em uma arena vibrante e pós-apocalíptica."
+    },
+    "slimes_shields": {
+      "title": "Slimes & Shields: Bad Campaign",
+      "description": "Roguelike",
+      "expanded_description": "<b>Gênero:</b> Roguelike <br/><b>Plataformas:</b> Windows <br/><b>Lançamento:</b> 07 de junho de 2022 <br/><br/>Um roguelike cômico sobre um <i>Slime sequestrado</i> forçado por um Mestre de Masmorras a jogar sua pior campanha: <i>Slimes & Shields</i>. Morra, evolua e sobreviva a infinitas rodadas usando apenas um escudo."
+    },
+    "astrotag": {
+      "title": "Astrotag",
+      "description": "Pega-pega espacial",
+      "expanded_description": "<b>Gênero:</b> Esportes / Pega-pega <br/><b>Plataformas:</b> Windows, Android, Web (HTML5) <br/><b>Lançamento:</b> Lançado <br/><br/>Entre na pele de Dithos Andromeda, um ex-corredor forçado de volta à arena cósmica! Compita no <i>Enercup</i>, o maior torneio de astrotag da galáxia, para pagar dívidas em uma emocionante <i>simulação de corrida espacial</i>."
+    },
+    "onomos": {
+      "title": "Onomos",
+      "description": "Simulador de apostas em corrida de slime",
+      "expanded_description": "<b>Gênero:</b> Corrida / Apostas <br/><b>Plataformas:</b> Windows <br/><b>Lançamento:</b> 12 de junho de 2021 <br/><br/>Bem-vindo à grande <i>Corrida Onomos</i>. Compre, aposte e <i>trapaceie para enriquecer</i> neste jogo de apostas e corridas de alto risco. Falência é só um contratempo temporário — você sempre pode tentar de novo!"
+    },
+    "casa_dos_ushers": {
+      "title": "A Casa dos Ushers",
+      "description": "Mistério / Visual Novel",
+      "expanded_description": "<b>Gênero:</b> Mistério / Visual Novel <br/><b>Plataformas:</b> Windows <br/><b>Lançamento:</b> 04 de dezembro de 2020 <br/><br/>Uma assombrosa <i>Visual Novel</i> baseada no clássico de Edgar Allan Poe. Viaje até uma mansão isolada após receber um chamado de socorro e acabe envolvido em um mistério aterrorizante e profundamente perturbador."
+    }
+  }
+}
