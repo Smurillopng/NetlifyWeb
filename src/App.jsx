@@ -1,26 +1,22 @@
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import Header from './components/Header';
-import Scene3D from './components/Scene3D';
+//import Scene3D from './components/Scene3D';
 import './App.css';
-
-const ProjectSection = lazy(() => import('./components/ProjectSection'));
+import Introduction from './components/Introduction';
+import GamesSection from './components/GamesSection';
 
 function App() {
   return (
     <div className="App">
+      
       <Header />
       
-      <section className="hero">
-        <Scene3D />
-        <div className="hero-content">
-          <h1>Welcome to My Portfolio</h1>
-          <p>Creating amazing web experiences</p>
-        </div>
-      </section>
-      
+      <Introduction />
+  
       <Suspense fallback={<div>Loading...</div>}>
-        <ProjectSection />
+        <GamesSection />
       </Suspense>
+    
     </div>
   );
 }

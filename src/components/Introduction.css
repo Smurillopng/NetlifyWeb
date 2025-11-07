@@ -1,0 +1,25 @@
+.introduction {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction .introduction-content {
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  pointer-events: none;
+}
+
+.introduction h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
