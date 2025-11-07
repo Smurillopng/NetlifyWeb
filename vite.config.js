@@ -10,6 +10,6 @@ export default defineConfig({
     minify: 'terser',
   },
   server: {
-    allowedHosts: ['devserver-base--muripng-portfolio.netlify.app'],
+    allowedHosts: ['devserver-base--muripng-portfolio.netlify.app', 'devserver-dev--muripng-portfolio.netlify.app'],
   },
 })
